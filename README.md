@@ -2,11 +2,12 @@
 
 ## :point_right: Deployment of Dash App for CHSI Dataset  
 
+**Dash App on Heroku**  
 http://dash-app-chsi.herokuapp.com/  
-
-## :point_right: Data Source
-
+**Data Source** 
 https://github.com/Nov05/CHSI-Dash/blob/master/README.md
+
+<br>
 
 ## :point_right: Logs
 
