@@ -297,4 +297,5 @@ def cb2(input1):
   else: # All Data
     return {'display': 'none'}
 
-app.run_server()
+if __name__ == '__main__':
+    app.run_server(debug=True)
