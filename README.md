@@ -2,7 +2,7 @@
 
 <br>
 
-## :point_right: Deployment of a Dash App for CHSI Dataset  
+## :point_right: Deployment of Dash App for CHSI Dataset  
 
 **Dash App on Heroku**  
 http://dash-app-chsi.herokuapp.com/  
