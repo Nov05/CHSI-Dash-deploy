@@ -223,10 +223,10 @@ marks1 = {
 app = dash.Dash(__name__)
 
 app.config['suppress_callback_exceptions']=True
-app.scripts.config.serve_locally = False
+#app.scripts.config.serve_locally = False
 # url_css = "https://codepen.io/chriddyp/pen/bWLwgP.css"
-url_css = "https://gist.githubusercontent.com/Nov05/c18c77e022df6a338318512fb3e8d3ef/raw/fdba953c93e3021e409b0857a759656e137b839a/CHSI-Dash.css"  
-app._external_stylesheet = [url_css]
+#url_css = "https://gist.githubusercontent.com/Nov05/c18c77e022df6a338318512fb3e8d3ef/raw/fdba953c93e3021e409b0857a759656e137b839a/CHSI-Dash.css"  
+#app._external_stylesheet = [url_css]
 
 app.layout = html.Div(
 #     style={'backgroundColor':bgcolor},
