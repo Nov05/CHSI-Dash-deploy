@@ -6,7 +6,7 @@
 
 **Dash App on Heroku**  
 http://dash-app-chsi.herokuapp.com/  
-**Data Source and Notebooks**  
+**Data Source and IPython Notebooks**  
 https://github.com/Nov05/CHSI-Dash/blob/master/README.md
 
 <img src="https://github.com/Nov05/CHSI-Dash/blob/master/pictures/ezgif.com-optimize.gif?raw=true" width=300>  
