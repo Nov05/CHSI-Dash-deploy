@@ -4,7 +4,7 @@
 
 **Dash App on Heroku**  
 http://dash-app-chsi.herokuapp.com/  
-**Data Source** 
+**Data Source**  
 https://github.com/Nov05/CHSI-Dash/blob/master/README.md
 
 <br>
