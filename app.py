@@ -13,7 +13,8 @@ from dash.dependencies import Input, Output
 import colorlover
 
 url = "https://raw.githubusercontent.com/Nov05/CHSI-Dash/master/data/DEMOGRAPHICS.csv"
-demogr = pd.read_csv(url)
+path = './data/DEMOGRAPHICS.csv'
+demogr = pd.read_csv(path)
 cols = demogr.columns.tolist()
 
 colorscales = ["Greens", "YlOrRd", "Bluered", "RdBu", "Reds", 
