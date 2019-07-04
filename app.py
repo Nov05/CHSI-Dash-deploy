@@ -134,7 +134,6 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
         name='slice',
         colorscale="Greys",
         opacity=0.5,
-        showlegend=False,
         showscale=False,
     )
     # this is merely a colorbar
