@@ -1,11 +1,11 @@
 # CHSI-Dash-deploy
 
-Deployment of Dash App for CHSI Dataset  
+### Deployment of Dash App for CHSI Dataset  
 http://dash-app-chsi.herokuapp.com/  
 
 2019-07-03 Repo created
   
-2019-07-04 Debug
+2019-07-04 Debug  
 https://devcenter.heroku.com/articles/logging#view-logs    
 heroku logs -n 200 -a dash-app-chsi
 
@@ -31,4 +31,21 @@ Add `server = app.server` after `app = dash.Dash(__name__)`, or it would have th
 2019-07-04T19:59:55.000000+00:00 app[api]: Build succeeded
 2019-07-04T20:02:43.769103+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=dash-app-chsi.herokuapp.com request_id=871a9cfd-c666-4416-af42-dc4cbdf4665f fwd="76.85.2.149" dyno= connect= service= status=503 bytes= protocol=http
 2019-07-04T20:02:44.323653+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=dash-app-chsi.herokuapp.com request_id=f9db9ffc-ef64-474e-9bd2-976c6a938b30 fwd="76.85.2.149" dyno= connect= service= status=503 bytes= protocol=http
+```
+
+2019-07-04 Debug 3D Surface
+```
+# this is a plane
+trace2 = go.Surface(
+    x=tuple(p1),
+    y=tuple(p2),
+    z=tuple(p3),
+    name='slice',
+    colorscale="Greys",
+    opacity=0.5,
+### WARNING: This is invalid. It would not cause problem in Colab.
+###          But it would fail the plot when deployed on Heroku.
+#     showlegend=False,  # invalid property
+    showscale=False,
+)
 ```
