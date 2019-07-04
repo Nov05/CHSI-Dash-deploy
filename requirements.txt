@@ -64,7 +64,6 @@ descartes==1.1.0
 dill==0.2.9
 distributed==1.25.3
 Django==2.2.2
-dlib==19.16.0
 dm-sonnet==1.33
 docopt==0.6.2
 docutils==0.14
@@ -286,7 +285,6 @@ scs==2.1.0
 selenium==3.141.0
 semantic-version==2.6.0
 Send2Trash==1.5.0
-setuptools-git==1.2
 Shapely==1.6.4.post2
 simplegeneric==0.8.1
 six==1.12.0
