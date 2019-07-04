@@ -9,8 +9,8 @@ http://dash-app-chsi.herokuapp.com/
 2019-07-03 Repo created
   
 2019-07-04 Debug  
+`heroku logs -n 200 -a dash-app-chsi`  
 https://devcenter.heroku.com/articles/logging#view-logs    
-heroku logs -n 200 -a dash-app-chsi
 
 Add `server = app.server` after `app = dash.Dash(__name__)`, or it would have the follow problem.  
 ```
