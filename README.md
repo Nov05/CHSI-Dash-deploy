@@ -21,8 +21,8 @@ https://devcenter.heroku.com/articles/logging#view-logs
 
 Add `server = app.server` after `app = dash.Dash(__name__)`, or it would have the follow problem.  
 ```
-2019-07-04T19:59:32.625915+00:00 app[api]: Deploy ff987c7a by user @hotmail.com
-2019-07-04T19:59:32.625915+00:00 app[api]: Release v12 created by user @hotmail.com
+2019-07-04T19:59:32.625915+00:00 app[api]: Deploy ff987c7a by user ***@***.com
+2019-07-04T19:59:32.625915+00:00 app[api]: Release v12 created by user ***@***.com
 2019-07-04T19:59:42.002629+00:00 heroku[web.1]: Starting process with command gunicorn app:server
 2019-07-04T19:59:44.144995+00:00 heroku[web.1]: State changed from starting to up
 2019-07-04T19:59:43.834964+00:00 app[web.1]: [2019-07-04 19:59:43 +0000] [4] [INFO] Starting gunicorn 19.9.0
