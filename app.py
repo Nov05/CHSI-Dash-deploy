@@ -284,10 +284,7 @@ app.layout = html.Div(
     dcc.Graph(id="graph", figure=fig),
 ])
 
-@app.callback(Output("graph", "figure"), [Input("dropdown1", "value"),
-                                          Input("radio1", "value"),
-                                          Input('slider1', "value"),
-                                         ])
+@app.callback(Output("graph", "figure"), [Input("dropdown1", "value"), Input("radio1", "value"), Input('slider1', "value")])
 def cb1(input1, input2, input3):
   return display_fig(in_age=input1, in_slice=input2, in_range=input3)
 
