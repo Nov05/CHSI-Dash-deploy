@@ -1,10 +1,14 @@
 # CHSI-Dash-deploy
 
-### :point_right: Deployment of Dash App for CHSI Dataset  
+## :point_right: Deployment of Dash App for CHSI Dataset  
 
 http://dash-app-chsi.herokuapp.com/  
 
-### :point_right: Logs
+## :point_right: Data Source
+
+https://github.com/Nov05/CHSI-Dash/blob/master/README.md
+
+## :point_right: Logs
 
 2019-07-03 Repo created
   
