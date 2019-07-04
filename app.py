@@ -127,16 +127,16 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
           showlegend=False,
     )
     # this is a plane
-#     trace2 = go.Surface(
-#         x=tuple(p1),
-#         y=tuple(p2),
-#         z=tuple(p3),
-#         name='slice',
-#         colorscale="YlGnBu",
-#         opacity=0.5,
-#         showlegend=False,
-#         showscale=False,
-#     )
+    trace2 = go.Surface(
+        x=tuple(p1),
+        y=tuple(p2),
+        z=tuple(p3),
+        name='slice',
+        colorscale="Greys",
+        opacity=0.5,
+        showlegend=False,
+        showscale=False,
+    )
     # this is merely a colorbar
     trace3 = go.Scatter3d(
         x=[0],
@@ -181,7 +181,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
                        ),
         showlegend=False,
     )    
-    data = [trace1, trace3, trace4]
+    data = [trace1, trace2, trace3, trace4]
 ##############    
 # end of if-else    
 ##############
