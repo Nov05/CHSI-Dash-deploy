@@ -9,6 +9,8 @@ http://dash-app-chsi.herokuapp.com/
 **Data Source**  
 https://github.com/Nov05/CHSI-Dash/blob/master/README.md
 
+<img src="https://github.com/Nov05/CHSI-Dash/blob/master/pictures/ezgif.com-optimize.gif?raw=true" width=300>  
+
 <br>
 
 ## :point_right: Logs
