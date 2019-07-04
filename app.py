@@ -14,7 +14,7 @@ import colorlover
 
 url = "https://raw.githubusercontent.com/Nov05/CHSI-Dash/master/data/DEMOGRAPHICS.csv"
 path = './data/DEMOGRAPHICS.csv'
-demogr = pd.read_csv(path)
+demogr = pd.read_csv(url)
 cols = demogr.columns.tolist()
 
 colorscales = ["Greens", "YlOrRd", "Bluered", "RdBu", "Reds", 
