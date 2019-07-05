@@ -16,7 +16,10 @@ https://github.com/Nov05/CHSI-Dash/blob/master/README.md
 ## :point_right: Logs
 
 2019-07-03 Repo created
-  
+
+2019-07-04 Deploy  
+https://dashboard.heroku.com/apps/dash-app-chsi/deploy/github   
+
 2019-07-04 Debug  
 `heroku logs -n 200 -a dash-app-chsi`  
 https://devcenter.heroku.com/articles/logging#view-logs    
