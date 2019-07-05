@@ -193,6 +193,9 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
       width=700,
       height=600,
       margin=dict(l=0, r=0, b=0, t=0),
+      title=go.layout.Title(text='County Level',
+                            xref='paper',
+                            x=0, y=0.95),
       scene=dict(xaxis=dict(title="x = Population Density (lg)"),
                  yaxis=dict(title=titley),
                  zaxis=dict(title="z = "+titlez),
@@ -256,7 +259,7 @@ app.layout = html.Div(
                   },                    
           ),  
       html.Div(id='text-slider1', children=[
-        html.Div(children='Slice Data by Poverty Level',
+        html.Div(children='Slice Data by Poverty Percentage',
         style = {'fontSize': '15px',
                  'padding-left': '20px',
                  'padding-top': '10px',
