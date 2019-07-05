@@ -149,7 +149,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
             colorscale=portland, # choose a colorscale
             opacity=1,
             showscale=True,
-            colorbar=dict(x=0.81, len=0.5, 
+            colorbar=dict(x=0.95, len=0.5, 
                           thickness=10,
                           outlinecolor='white', outlinewidth=0,
                           title=dict(text="Poverty", font=dict(size=10))
