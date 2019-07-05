@@ -41,16 +41,16 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
   # 85 Over, col 26 = 3  
   if in_age==0:
     y = demogr[cols[17]]
-    titley = "y = Age Under 19"
+    titley = "y = Age Under 19 (%)"
   elif in_age==1:
     y = demogr[cols[20]]
-    titley = "y = Age 20-64"
+    titley = "y = Age 20-64 (%)"
   elif in_age==2:
     y = demogr[cols[23]]
-    titley = "y = Age 65-84"
+    titley = "y = Age 65-84 (%)"
   elif in_age==3:
     y = demogr[cols[26]]
-    titley = "y = Age Above 85"
+    titley = "y = Age Above 85 (%)"
     
   # log10(population density), poverty
   x = np.log10(demogr[cols[11]].replace([-2222,0], [demogr[cols[11]].mean(),1]))
@@ -61,10 +61,10 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
   slicenum = 38
   slices = np.linspace(0, max(z), slicenum)
   
-##############  
+  ##############  
   if in_slice == 0: 
-############## 
-# display all data
+  ############## 
+  # display all data
     trace1 = go.Scatter3d(
         x=x,
         y=y,
@@ -90,10 +90,10 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
                        )
     )
     data = [trace1]
-##############    
+  ##############    
   else: 
-##############
-# display sliced data
+  ##############
+  # display sliced data
     # slice data
     if in_range<0 or in_range>slicenum: in_range=0
     condition = ((z >= slices[in_range]) & (z < slices[in_range+1]))
@@ -165,7 +165,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
         x=x1,
         y=y1,
         z=z1,
-        name='Poverty',
+        name='Poverty (%)',
         mode='markers',
         marker=dict(
             size=d*2,
@@ -181,9 +181,9 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
         showlegend=False,
     )    
     data = [trace1, trace2, trace3, trace4]
-##############    
-# end of if-else    
-##############
+  ##############    
+  # end of if-else    
+  ##############
     
   layout = go.Layout(
       autosize=False,
@@ -192,7 +192,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
       margin=dict(l=0, r=0, b=0, t=0),
       scene=dict(xaxis=dict(title="x = Population Density (lg)"),
                  yaxis=dict(title=titley),
-                 zaxis=dict(title="z = Poverty"),
+                 zaxis=dict(title="z = Poverty (%)"),
 #       bgcolor=bgcolor,
       ),
   )
