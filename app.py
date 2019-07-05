@@ -28,6 +28,7 @@ portland = [
 ]
 bgcolor = 'rgba(238, 238, 238, 1)'
 portland_rgb = [i[1] for i in portland]
+colorbarx = 0.95
 
 #########################################################################
 # 3D Scatter
@@ -76,7 +77,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
             colorscale=colorscales[8],   # choose a colorscale
             opacity=1,
             showscale=True,
-            colorbar=dict(x=0.81, len=0.5, 
+            colorbar=dict(x=colorbarx, len=0.5, 
                           thickness=10,
                           outlinecolor='white', outlinewidth=0,
                           title=dict(text="Poverty", font=dict(size=10))
@@ -100,7 +101,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
     x1 = x[condition]
     y1 = y[condition]
     z1 = [slices[in_range]] * len(x1)
-    slicecolor =colorlover.interp(portland_rgb, slicenum)[in_range]
+    slicecolor = colorlover.interp(portland_rgb, slicenum)[in_range]
 
     # create a plane
     p1 = np.linspace(0, max(x), 5)
@@ -149,7 +150,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
             colorscale=portland, # choose a colorscale
             opacity=1,
             showscale=True,
-            colorbar=dict(x=0.95, len=0.5, 
+            colorbar=dict(x=colorbarx, len=0.5, 
                           thickness=10,
                           outlinecolor='white', outlinewidth=0,
                           title=dict(text="Poverty", font=dict(size=10))
