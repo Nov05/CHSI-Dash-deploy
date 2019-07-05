@@ -30,6 +30,7 @@ bgcolor = 'rgba(238, 238, 238, 1)'
 portland_rgb = [i[1] for i in portland]
 colorbarx = 0.95
 titlez = "Poverty (%)"
+url_repo = "https://github.com/Nov05/CHSI-Dash-deploy"
 
 #########################################################################
 # 3D Scatter
@@ -284,6 +285,11 @@ app.layout = html.Div(
           }    
     ),
     dcc.Graph(id="graph", figure=fig),
+    html.Div("https://github.com/Nov05/CHSI-Dash-deploy"),
+    html.Div(children=["Developed by ", html.A("Nov05", href=url_repo, target="_blank")],
+             style={'padding-top': '20px',
+                    'fontsize':'5px'}
+    ),
 ])
 
 @app.callback(Output("graph", "figure"), [Input("dropdown1", "value"), Input("radio1", "value"), Input('slider1', "value")])
