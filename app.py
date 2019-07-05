@@ -285,7 +285,6 @@ app.layout = html.Div(
           }    
     ),
     dcc.Graph(id="graph", figure=fig),
-    html.Div("https://github.com/Nov05/CHSI-Dash-deploy"),
     html.Div(children=["Developed by ", html.A("Nov05", href=url_repo, target="_blank")],
              style={'padding-top': '20px',
                     'fontsize':'5px'}
