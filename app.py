@@ -29,6 +29,7 @@ portland = [
 bgcolor = 'rgba(238, 238, 238, 1)'
 portland_rgb = [i[1] for i in portland]
 colorbarx = 0.95
+titlez = "Poverty (%)"
 
 #########################################################################
 # 3D Scatter
@@ -80,7 +81,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
             colorbar=dict(x=colorbarx, len=0.5, 
                           thickness=10,
                           outlinecolor='white', outlinewidth=0,
-                          title=dict(text="Poverty", font=dict(size=10))
+                          title=dict(text=titlez, font=dict(size=10))
                          ),
             line=dict(width=0.001, color='black')
         ),
@@ -153,7 +154,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
             colorbar=dict(x=colorbarx, len=0.5, 
                           thickness=10,
                           outlinecolor='white', outlinewidth=0,
-                          title=dict(text="Poverty", font=dict(size=10))
+                          title=dict(text=titlez, font=dict(size=10))
                          ),
             line=dict(width=0.01, color='gray')
         ),
@@ -193,7 +194,7 @@ def display_fig(in_age=0, in_slice=0, in_range=0):
       margin=dict(l=0, r=0, b=0, t=0),
       scene=dict(xaxis=dict(title="x = Population Density (lg)"),
                  yaxis=dict(title=titley),
-                 zaxis=dict(title="z = Poverty (%)"),
+                 zaxis=dict(title="z = "+titlez),
 #       bgcolor=bgcolor,
       ),
   )
